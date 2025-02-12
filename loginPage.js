@@ -3,7 +3,7 @@ import { Card, CardContent, TextField, Button, Typography } from '@mui/material'
 import { use, useState } from 'react';
 import authProvider from './authProvider';
 
-const loginPage = ({ theme }) => {
+const LoginPage = ({ theme }) => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
 
@@ -31,4 +31,4 @@ const loginPage = ({ theme }) => {
     );
 };
 
-export default loginPage;
+export default LoginPage;
