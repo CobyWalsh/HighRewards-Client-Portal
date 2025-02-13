@@ -1,9 +1,8 @@
-import { Login } from 'react-admin';
 import { Card, CardContent, TextField, Button, Typography } from '@mui/material';
-import { use, useState } from 'react';
+import { useState } from 'react';
 import authProvider from './authProvider';
 
-const LoginPage = ({ theme }) => {
+const LoginPage = () => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
 
@@ -14,8 +13,7 @@ const LoginPage = ({ theme }) => {
     };
 
     return ( 
-        <Login>
-            <Card>
+            <Card style={{maxWidth: 400, margin: 'auto', marginTop: '100px', padding: '20px'}}>
                 <CardContent>
                     <Typography variant="h5">Client Login</Typography>
                     <form onSubmit={handleSubmit}>
@@ -27,7 +25,6 @@ const LoginPage = ({ theme }) => {
                     </form>
                 </CardContent>
             </Card>
-        </Login>
     );
 };
 
