@@ -1,13 +1,25 @@
-import React from "react";
-import { Admin, Resource } from 'react-admin';
-import authProvider from "./authProvider";
-import LoginPage from "./loginPage";
-import dataProvider from './dataProvider';
+import logo from './logo.svg';
+import './App.css';
 
-const App = () => (
-    <Admin authProvider={authProvider} loginPage={LoginPage} dataProvider={dataProvider}>
-        {/* Define resourse here */}
-    </Admin>
-);
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> Coby was here
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
+  );
+}
 
 export default App;
